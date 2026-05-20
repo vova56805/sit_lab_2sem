@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f6f6f6;
+}
+
+h1 {
+    text-align: center;
+}
+
+.panel {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+form {
+    background: white;
+    border: 1px solid #bfbfbf;
+    padding: 15px 20px;
+    min-width: 360px;
+}
+
+form h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 140px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 170px;
+    padding: 4px;
+}
+
+input[type="button"] {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    border: 1px solid #bfbfbf;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background: #dddddd;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}

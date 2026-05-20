@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title> </title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      background-color: #a5d6a7;
+      padding: 20px;
+      border: 2px solid #81c784;
+      box-sizing: border-box;
+
+    }
+
+    .row {
+      display: block;
+      font-size: 0;
+      margin-bottom: 15px;
+    }
+
+    .card {
+      display: inline-block;
+      width: calc(33.333% - 10px);
+      min-width: 120px;
+      max-width: 100%;
+      background-color: white;
+      padding: 15px;
+      border: 2px solid #b0deb1;
+      line-height: 1.4;
+      box-sizing: border-box;
+      font-size: 14px;
+      vertical-align: top;
+      word-wrap: break-word; /
+    }
+
+    .empty-placeholder {
+      display: inline-block;
+      width: calc(33.333% - 10px);
+      min-width: 120px;
+      max-width: 100%;
+      background: transparent;
+      border: none;
+      padding: 0;
+      vertical-align: top;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+
+  <div class="row">
+    <div class="card">
+      <strong>JavaScript</strong> разработан в 1996 году, автор — американский программист Брендан Айк.
+    </div>
+    <div class="empty-placeholder"></div>
+    <div class="card">
+      <strong>Python</strong> создан в 1989–1991 годах голландским программистом Гвидо ван Россумом.
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="card">
+      <strong>C</strong> разработан в 1969–1973 годах сотрудником Bell Labs Деннисом Ритчи.
+    </div>
+    <div class="card">
+      <strong>Prolog</strong> разработан в 1972 году, автор — французский программист Ален Колмероэ.
+    </div>
+    <div class="card">
+      <strong>Java</strong> разработан в 1990–1996 годах канадским программистом Джеймсом Гослингом.
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
