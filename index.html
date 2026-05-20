@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Лабораторная работа — Калькулятор ромба</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Калькулятор характеристик ромба</h1>
+    
+
+    <section class="card">
+      <h2>1. Выбор типа входных данных</h2>
+
+      <div class="radio-group">
+        <label>
+          <input type="radio" name="inputType" value="diagonals" checked />
+          Диагонали
+        </label>
+
+        <label>
+          <input type="radio" name="inputType" value="sideAngle" />
+          Сторона и угол
+        </label>
+
+        <button id="showBtn" type="button">Показать</button>
+      </div>
+    </section>
+
+    <section class="card layout">
+      <div class="figure-block">
+        <h2>2. Схема</h2>
+        <div id="figureContainer" class="figure-container"></div>
+      </div>
+
+      <div class="form-block">
+        <h2>3. Ввод данных</h2>
+
+        <div class="field">
+          <label id="label1" for="value1">Диагональ d1</label>
+          <input id="value1" type="number" step="any" min="0" placeholder="Введите d1" />
+          <small class="error-text" id="error1"></small>
+        </div>
+
+        <div class="field">
+          <label id="label2" for="value2">Диагональ d2</label>
+          <input id="value2" type="number" step="any" min="0" placeholder="Введите d2" />
+          <small class="error-text" id="error2"></small>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>4. Что вычислить</h2>
+
+      <div class="checkbox-group">
+        <label>
+          <input type="checkbox" id="calcPerimeter" checked />
+          Периметр
+        </label>
+
+        <label>
+          <input type="checkbox" id="calcArea" checked />
+          Площадь
+        </label>
+
+        <label>
+          <input type="checkbox" id="calcHeight" checked />
+          Высота
+        </label>
+      </div>
+
+      <small class="error-text" id="resultError"></small>
+
+      <div class="actions">
+        <button id="calcBtn" type="button">Вычислить</button>
+        <button id="clearBtn" type="button" class="secondary">Очистить</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>5. Результаты</h2>
+      <div id="results" class="results empty">
+        Результаты появятся здесь
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
