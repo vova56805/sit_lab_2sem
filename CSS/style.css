@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h3 {
+    margin-bottom: 15px;
+}
+
+form {
+    margin-bottom: 15px;
+}
+
+svg {
+    width: 800px;
+    height: 400px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+svg path,
+svg line {
+    fill: none;
+    stroke: black;
+    stroke-width: 1px;
+}
+
+svg text {
+    font: 9px Verdana;
+}
+
+table {
+    border-collapse: collapse;
+    width: 800px;
+    margin-top: 10px;
+}
+
+th,
+td {
+    border: 1px solid #555;
+    padding: 6px;
+    font-size: 14px;
+}
+
+th {
+    background-color: #cfcfcf;
+    text-align: center;
+}
+
+td {
+    background-color: #eeeeee;
+}
+
+tr:nth-child(even) td {
+    background-color: #d9d9d9;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#error {
+    color: red;
+    font-weight: bold;
+}
