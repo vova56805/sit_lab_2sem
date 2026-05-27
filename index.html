@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная 4</title>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="JavaScript/image.js"></script>
+    <script src="JavaScript/path.js"></script>
+    <script src="JavaScript/main.js"></script>
+</head>
+<body>
+    <form id="form">
+        <label>x: <input type="number" id="cx" value="100"></label><br>
+        <label>y: <input type="number" id="cy" value="100"></label><br>
+
+        <label>Конечные x: <input type="number" id="cx_finish" value="400"></label><br>
+        <label>Конечные y: <input type="number" id="cy_finish" value="400"></label><br>
+
+        <label><input type="checkbox" id="anim" checked> Анимация</label><br>
+
+        <label>Тип:
+            <select id="ease">
+                <option value="linear">linear</option>
+                <option value="bounce">bounce</option>
+                <option value="elastic">elastic</option>
+            </select>
+        </label><br>
+
+        <label>Путь:
+            <select id="pathSelect">
+                <option value="0">Г</option>
+                <option value="1">Круг</option>
+            </select>
+        </label><br><br>
+
+        <button type="button" id="draw">Нарисовать</button>
+       <!-- <button type="button" id="animate">Анимировать</button> -->
+        <button type="button" id="clear">Очистить</button>
+    </form>
+
+    <br>
+    <svg width="600" height="600" style="border:1px solid black;"></svg>
+</body>
+</html>
