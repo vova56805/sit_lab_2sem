@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <div class="panel">
+            <h1>Настройка анимации</h1>
+
+            <label for="duration">Время анимации (мс)</label>
+            <input type="text" id="duration" value="1000">
+
+            <label for="startScale">Начальный масштаб</label>
+            <input type="text" id="startScale" value="1">
+
+            <label for="endScale">Конечный масштаб</label>
+            <input type="text" id="endScale" value="1">
+
+            <label for="rotateDegrees">Поворот (градусы)</label>
+            <input type="text" id="rotateDegrees" value="150">
+
+            <div class="buttons">
+                <button id="drawBtn">Нарисовать</button>
+                <button id="startBtn">Запустить анимацию</button>
+                <button id="clearBtn">Очистить</button>
+            </div>
+        </div>
+
+        <div class="canvas-wrap">
+            <svg id="scene" width="760" height="620"></svg>
+        </div>
+    </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
