@@ -1,0 +1,63 @@
+.App {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+svg {
+  width: 900px;
+  height: 450px;
+}
+
+svg path,
+line {
+  fill: none;
+  stroke: black;
+  width: 1px;
+}
+
+svg text {
+  font: 8px Verdana;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 20px;
+  width: 100%;
+  font-size: 13px;
+}
+
+th,
+td {
+  padding: 5px;
+  text-align: left;
+}
+
+.filter-form {
+  margin-bottom: 20px;
+}
+
+.filter-row {
+  margin-bottom: 8px;
+}
+
+.filter-row label {
+  display: inline-block;
+  width: 160px;
+}
+
+.filter-row input {
+  width: 220px;
+}
+
+.filter-buttons {
+  margin-top: 10px;
+}
+
+.filter-buttons button {
+  margin-right: 10px;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
