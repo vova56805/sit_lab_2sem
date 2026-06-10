@@ -1,0 +1,125 @@
+.App {
+  max-width: 1220px;
+  margin: 20px auto;
+  padding: 14px;
+  border: 1px solid #808080;
+  background: #ffffff;
+}
+
+h3 {
+  margin: 0 0 18px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+h4 {
+  margin: 0 0 12px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.filter-form {
+  margin-bottom: 20px;
+}
+
+.filter-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.filter-row label {
+  width: 125px;
+  text-align: right;
+}
+
+.filter-row input {
+  width: 210px;
+  padding: 4px 6px;
+  border: 1px solid #999999;
+  font-size: 14px;
+}
+
+.filter-buttons {
+  margin-top: 14px;
+}
+
+button {
+  margin-right: 6px;
+  padding: 4px 8px;
+  border: 1px solid #777777;
+  background: #eeeeee;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #dddddd;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+th,
+td {
+  border: 1px solid #8f8f8f;
+  padding: 7px 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+th {
+  background: #d3d3d3;
+  text-align: center;
+  font-weight: 700;
+}
+
+.show {
+  display: table-row;
+}
+
+.hide {
+  display: none;
+}
+
+.pagination {
+  margin-top: 16px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pagination span {
+  display: inline-block;
+  min-width: 18px;
+  padding: 3px 4px;
+  text-align: center;
+  cursor: pointer;
+  color: #333333;
+}
+
+.pagination span:hover {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.pagination .active-page {
+  color: blue;
+  font-weight: 700;
+}
+
+.empty-message {
+  margin: 12px 0 0;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  background: #fafafa;
+}
