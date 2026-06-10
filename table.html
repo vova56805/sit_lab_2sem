@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Фильтры, сортировка и графики фильмов</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <script src="JavaScript/data.js"></script>
+    <script src="JavaScript/table.js"></script>
+    <script src="JavaScript/filter.js"></script>
+    <script src="JavaScript/sort.js"></script>
+    <script src="JavaScript/chart.js"></script>
+    <script src="JavaScript/main.js"></script>
+</head>
+<body>
+    <ul type="none">
+        <li><a href="sit_lab_2.html">Главная</a></li>
+        <li><a href="table.html">Список фильмов</a></li>
+    </ul>
+
+    <hr>
+
+    <h1>Каталог фильмов</h1>
+
+    <div class="panel">
+        <form id="filter">
+            <h2>Фильтр</h2>
+
+            <p>
+                <label for="filmTitle">Название фильма:</label>
+                <input type="text" id="filmTitle">
+            </p>
+
+            <p>
+                <label for="genre">Жанр:</label>
+                <input type="text" id="genre">
+            </p>
+
+            <p>
+                <label for="director">Режиссёр:</label>
+                <input type="text" id="director">
+            </p>
+
+            <p>
+                <label for="country">Страна:</label>
+                <input type="text" id="country">
+            </p>
+
+            <p>
+                <label for="yearFrom">Год:</label>
+                от <input type="number" id="yearFrom">
+                до <input type="number" id="yearTo">
+            </p>
+
+            <p>
+                <label for="ratingFrom">Рейтинг IMDb:</label>
+                от <input type="number" step="0.1" id="ratingFrom">
+                до <input type="number" step="0.1" id="ratingTo">
+            </p>
+
+            <p>
+                <label for="durationFrom">Длительность:</label>
+                от <input type="number" id="durationFrom">
+                до <input type="number" id="durationTo">
+            </p>
+
+            <p>
+                <input type="button" id="findBtn" value="Найти">
+                <input type="button" id="clearFilterBtn" value="Очистить фильтры">
+            </p>
+        </form>
+
+        <form id="sort">
+            <h2>Сортировка</h2>
+
+            <p>Сортировать по</p>
+
+            <p>
+                <select id="fieldsFirst"></select>
+                по убыванию?
+                <input type="checkbox" id="fieldsFirstDesc">
+            </p>
+
+            <p>
+                <select id="fieldsSecond"></select>
+                по убыванию?
+                <input type="checkbox" id="fieldsSecondDesc">
+            </p>
+
+            <p>
+                <input type="button" id="sortBtn" value="Сортировать">
+                <input type="button" id="clearSortBtn" value="Сбросить сортировку">
+            </p>
+        </form>
+    </div>
+
+    <h2>Настройки графика</h2>
+
+    <form id="graph">
+        <p>Значение по оси OX</p>
+
+        <label>
+            <input type="radio" name="axisX" value="Год" checked>
+            Год
+        </label>
+
+        <label>
+            <input type="radio" name="axisX" value="Страна">
+            Страна
+        </label>
+
+        <label>
+            <input type="radio" name="axisX" value="Жанр">
+            Жанр
+        </label>
+
+        <p>Значение по оси OY</p>
+
+        <label>
+            <input type="radio" name="axisY" value="Рейтинг IMDb" checked>
+            Рейтинг IMDb
+        </label>
+
+        <label>
+            <input type="radio" name="axisY" value="Длительность">
+            Длительность
+        </label>
+
+        <p>Тип графика</p>
+
+        <select id="chartType">
+            <option value="dot">Точечная диаграмма</option>
+            <option value="bar">Гистограмма</option>
+        </select>
+
+        <p>
+            <input type="button" id="drawBtn" value="Построить график">
+        </p>
+    </form>
+
+    <svg></svg>
+
+    <p>
+        <input type="button" id="tableBtn" value="Скрыть таблицу">
+    </p>
+
+    <table id="list"></table>
+
+    <footer>
+        Моисеев Владимир Геннадьевич<br>
+        Б9123-02.03.03тп(2)
+    </footer>
+</body>
+</html>

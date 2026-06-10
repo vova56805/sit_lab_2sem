@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.settings {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+}
+
+svg {
+    width: 900px;
+    height: 450px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+svg path,
+svg line {
+    fill: none;
+    stroke: black;
+    stroke-width: 1px;
+}
+
+svg text {
+    font: 9px Verdana;
+}
+
+table {
+    border-collapse: collapse;
+    width: 900px;
+    margin-top: 10px;
+}
+
+th,
+td {
+    border: 1px solid #555;
+    padding: 5px;
+    font-size: 13px;
+}
+
+th {
+    background-color: #cfcfcf;
+}
+
+td {
+    background-color: #eeeeee;
+}
+
+tr:nth-child(even) td {
+    background-color: #d9d9d9;
+}
+
+button {
+    padding: 5px 10px;
+}

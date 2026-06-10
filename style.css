@@ -1,0 +1,259 @@
+.menu{
+    width:100%;
+    height:65px;
+    margin: 0 auto;
+    background-color:DeepSkyBlue;
+    align-text: center;
+    
+}
+/* шапка*/
+    .logoslogo {
+        margin: 17px;
+        float:left;
+        font-size: 1.5em;
+        color:white;
+        font-weight: bold;
+    }
+    .search{
+        color:grey;
+        font-size: 1.5em;
+        padding-right:70px;
+        padding-left:7px;
+    }
+    .searchFon{
+        margin:15px;
+        margin-right:5px;
+        float:right;
+        border: thin grey solid;
+        background-color: white;
+    }
+    .find{
+        font-size: 1.5em;
+        padding:5px;
+        color:white;
+    }
+    .findFon{
+        border-radius: 10%;
+        margin: 16px 10px 10px 0;
+        float:right;
+        background-color: RoyalBlue;
+    }
+    .divmenu {
+        background-color:red;
+        width: 100%;
+
+    }
+.inline-menu1234{
+    font-size: 1.5em;
+    vertical-align: middle;
+    margin-top:20px;
+    margin-left:3px;
+   
+}
+.menu234 {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.left{
+    float:left;
+}
+.menu1{
+    text-decoration: none;
+    background-color: RoyalBlue;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 0 10px;
+
+}
+.inline{
+    display:inline;
+}
+red{
+ background-color:red;
+}
+/* 6 картинок */
+.pict123456{
+    margin: auto;
+    width: 92%;
+    padding: 30px 0 0 0;
+
+}
+.column {
+    display: inline-block;
+    vertical-align: top;
+    width: 33.3%;
+
+
+}
+.img1{
+ display: block;
+    vertical-align: top;
+    width: 100%;
+    height: 170px;
+}
+
+.img2{
+    vertical-align: top;
+    width: 100%;
+    height: 85px;
+}
+.main_block{
+    margin-top:10px;
+    width: 100%;
+    border: solid red;
+}
+/* 5 кружков */
+.block_circle{
+    padding-left:7%;
+    width: 60%;
+    border: solid blue;
+    display: inline-block;
+    vertical-align: top;
+
+}
+.column_circle1{
+    text-align: center;
+    display: inline-block;
+    width: 11.9%;
+    border: solid green;
+    vertical-align: top;
+}
+.column_circle{
+    margin-left: 7%;
+    text-align: center;
+    display: inline-block;
+    width: 11.9%;
+    border: solid green;
+    vertical-align: top;
+}
+.img_circle{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 10px;
+    display: block;
+}
+.circle_title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.circle_text {
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    font-size: 1.5em;
+    color: grey;
+}
+.botton_circle {
+    border: thin black solid;
+    background-color: #007bff;
+    color: white;
+
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.3em;
+
+}
+/* левый нижний блок*/
+.block_tpt{
+    vertical-align: top;
+    width: 100%;
+    border: solid yellow;
+    height: 600px;
+}
+.text_tpt{
+
+    display: inline-block;
+    width: 24%;
+    padding: 15px;
+    vertical-align: top;
+    font-size: 1.5em;
+    min-height: 200px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+
+    line-height: 1.4;
+
+}
+.png_tpt{
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    text-align: center;
+    font-size: 0;
+}
+.png_tpt img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+}
+.center-title {
+    text-align: center;
+    font-size: 44px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+/* самый правый блок */
+.block_tptp{
+    width: 26%;
+    display: inline-block;
+    border: solid deeppink;
+    font-size: 0;
+
+    margin-bottom: 30px;
+    vertical-align: top;
+}
+.greyline {
+    display: inline-block;
+    height: 1000px;
+    border-left: 5px solid grey;
+}
+
+.text_tptp{
+    border: solid black;
+    display: inline-block;
+    width:48%;
+    vertical-align: top;
+    font-size: 24px;
+
+}
+.text_tptp h3{
+    float: right;
+    margin-right: 30px;
+}
+.png_tptp{
+    border: solid red;
+    display: inline-block;
+    width: 45%;
+    height: 400px;
+    vertical-align: top;
+
+}
+
+.png_tptp img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.tptp12 {
+    border: solid #e67707;
+    font-size: 0;
+    margin-bottom: 30px;
+}
+.tptp12 a {
+    float: right;
+}
+.more-link {
+    color: brown;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+.more-link:hover {
+    text-decoration: underline;
+}
